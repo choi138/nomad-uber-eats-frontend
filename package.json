@@ -1,7 +1,16 @@
 {
-  "name": "my-app",
+  "name": "nomad-uber-eats-frontend",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
+  "repository": "https://github.com/choi138/nomad-uber-eats-frontend",
+  "maintainers": [
+    {
+      "name": "GeunWon Choi",
+      "email": "kidjustinchoi@gmail.com",
+      "url": "https://github.com/choi138"
+    }
+  ],
   "dependencies": {
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.8",
