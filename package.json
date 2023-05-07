@@ -30,7 +30,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "tailwind:build": "npx tailwindcss -i ./src/styles/tailwind/styled.css -o ./src/styles/tailwind/build.css --watch",
+    "tailwind:build": "npx tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/build.css --watch",
     "dev": "npm run tailwind:build & vite",
     "build": "tsc && vite build",
     "preview": "vite preview",

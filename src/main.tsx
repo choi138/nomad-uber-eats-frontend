@@ -7,7 +7,7 @@ import { RecoilRoot } from 'recoil';
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 
 import App from './App';
-import './styles/tailwind/build.css';
+import './styles/build.css';
 
 const client = new QueryClient();
 
