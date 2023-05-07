@@ -3,7 +3,7 @@ import React from 'react';
 export const LoginPage: React.FC = () => {
   return (
     <div>
-      <h1>Login Page</h1>
+      <h1 className="bg-black text-white">Login Page</h1>
     </div>
   );
 };

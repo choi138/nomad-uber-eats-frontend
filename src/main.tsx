@@ -9,6 +9,7 @@ import { ApolloClient, InMemoryCache } from '@apollo/client';
 
 import App from './App';
 import { globalStyle } from './styles';
+import './styles/tailwind/build.css';
 
 const client = new QueryClient();
 
@@ -46,5 +47,5 @@ root.render(
         </QueryClientProvider>
       </RecoilRoot>
     </ApolloProvider>
-  </BrowserRouter>
+  </BrowserRouter>,
 );
