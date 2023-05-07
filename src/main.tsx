@@ -4,11 +4,9 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { ApolloProvider, makeVar } from '@apollo/client';
 import { RecoilRoot } from 'recoil';
-import { Global } from '@emotion/react';
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 
 import App from './App';
-import { globalStyle } from './styles';
 import './styles/tailwind/build.css';
 
 const client = new QueryClient();
@@ -42,7 +40,6 @@ root.render(
     <ApolloProvider client={apolloClient}>
       <RecoilRoot>
         <QueryClientProvider client={client}>
-          <Global styles={[globalStyle]} />
           <App />
         </QueryClientProvider>
       </RecoilRoot>
