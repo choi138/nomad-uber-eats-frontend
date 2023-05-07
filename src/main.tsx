@@ -46,5 +46,5 @@ root.render(
         </QueryClientProvider>
       </RecoilRoot>
     </ApolloProvider>
-  </BrowserRouter>,
+  </BrowserRouter>
 );
