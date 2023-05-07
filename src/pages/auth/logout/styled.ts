@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
-export const SignOutPageContainer = styled.div``;
+export const LogoutPageContainer = styled.div``;
 
-export const SignOutPageSinInButton = styled.button`
+export const LogoutPageSinInButton = styled.button`
   border: none;
   background-color: darkgrey;
   color: white;

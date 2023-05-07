@@ -3,12 +3,12 @@ import { Route, Routes } from 'react-router-dom';
 
 import { gql, useQuery, useReactiveVar } from '@apollo/client';
 
-import { Main, SignInPage, SignOutPage } from './pages';
-import { isSignInVar } from './main';
+import { Main, LoginPage, LogoutPage } from './pages';
+import { isLoginVar } from './main';
 
 export const App: React.FC = () => {
-  const isSignIn = useReactiveVar(isSignInVar);
-  return isSignIn ? <SignInPage /> : <SignOutPage />;
+  const isLogin = useReactiveVar(isLoginVar);
+  return isLogin ? <LoginPage /> : <LogoutPage />;
 };
 
 export default App;

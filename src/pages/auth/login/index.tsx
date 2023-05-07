@@ -1,8 +1,8 @@
-import { isSignInVar } from '@/main';
+import { isLoginVar } from '@/main';
 
-export const SignInPage: React.FC = () => {
+export const LoginPage: React.FC = () => {
   const onClick = () => {
-    isSignInVar(false);
+    isLoginVar(false);
   };
   return (
     <div>

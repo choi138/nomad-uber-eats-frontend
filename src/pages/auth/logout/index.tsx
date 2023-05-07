@@ -2,7 +2,11 @@ import { useForm } from 'react-hook-form';
 
 import * as S from './styled';
 
-export const SignOutPage: React.FC = () => {
+export interface LoginValue {
+  name: string;
+}
+
+export const LogoutPage: React.FC = () => {
   const {
     register,
     watch,
@@ -18,7 +22,7 @@ export const SignOutPage: React.FC = () => {
     console.log(errors);
   };
   return (
-    <S.SignOutPageContainer>
+    <S.LogoutPageContainer>
       <span>This is sign out page</span>
       <br />
       <form onSubmit={handleSubmit(onSubmit, onInValid)}>
@@ -39,8 +43,8 @@ export const SignOutPage: React.FC = () => {
             placeholder="password"
           />
         </div>
-        <S.SignOutPageSinInButton>Submit</S.SignOutPageSinInButton>
+        <S.LogoutPageSinInButton>Submit</S.LogoutPageSinInButton>
       </form>
-    </S.SignOutPageContainer>
+    </S.LogoutPageContainer>
   );
 };
