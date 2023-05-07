@@ -2,8 +2,9 @@ import { useForm } from 'react-hook-form';
 
 import * as S from './styled';
 
-export interface LoginValue {
-  name: string;
+export interface LoginFormValues {
+  email: string;
+  password: string;
 }
 
 export const LogoutPage: React.FC = () => {
@@ -12,7 +13,7 @@ export const LogoutPage: React.FC = () => {
     watch,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm<LoginFormValues>();
   // watch function watch the input value
   const onSubmit = () => {
     console.log(watch()); // You can only watch email by doing ('email') this
@@ -35,6 +36,8 @@ export const LogoutPage: React.FC = () => {
             type="email"
             placeholder="email"
           />
+          <span>{errors?.email?.message}</span>
+          <span>{errors.email?.type === 'validate' && 'Only gmail allowed'}</span>
         </div>
         <div>
           <input
