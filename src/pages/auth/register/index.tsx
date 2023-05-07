@@ -1,7 +1,9 @@
-export const SignUpPage: React.FC = () => {
+import React from 'react';
+
+export const RegisterPage: React.FC = () => {
   return (
     <div>
-      <span>This is sign up page</span>
+      <h1>Register page</h1>
     </div>
   );
 };

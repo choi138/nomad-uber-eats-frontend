@@ -1,14 +1,9 @@
-import { isLoginVar } from '@/main';
+import React from 'react';
 
 export const LoginPage: React.FC = () => {
-  const onClick = () => {
-    isLoginVar(false);
-  };
   return (
     <div>
-      <span>This is sign in page</span>
-      <br />
-      <button onClick={onClick}>Click to signOut</button>
+      <h1>Login Page</h1>
     </div>
   );
 };
